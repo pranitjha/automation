@@ -31,6 +31,9 @@ npx nightwatch </path/of/the/test/case>
 
 Path can be individual test case or a directory which contains multiple test cases.
 
+In case you are running custom commands, please find below command to execute the test case:
+yarn --cwd /var/www/html/docroot/core test:nightwatch PATH_TO_YOUR_TEST_CASE
+
 Even the test cases can be categorised into different tags, and a particular tag can be executed:
 --tag tagName
 ```
@@ -157,3 +160,9 @@ And the Nightwatch section can be added like this:
 ```
 or the last line can be changed to path of a specific test case.
 
+NOTE: 
+
+1. Create a global.js file as given and update the Drupal credentials given in it so that the credentials can be used in other test cases.
+2. In nightwatch.conf.js file, add global.js location in variable globals_path.
+3. If you are creating custom commands, in your Nightwatch configuration file (nightwatch.conf.js), ensure the custom_commands_path attribute is set to point to the directory where you will be storing your custom command files.
+4. In case your test case fails, please make sure that the selectors are added correctly in the test case as per your project.
