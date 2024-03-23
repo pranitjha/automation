@@ -1,0 +1,26 @@
+# Define permissions for the phptest module.
+
+'view article titles':
+  title: 'View article titles'
+  description: 'Allows users to view article titles via the REST API.'
+  restrict access: false
+'create article content':
+  title: 'Create article content'
+  description: 'Allows users to create article content.'
+  restrict access: false
+'view own article content':
+  title: 'View own article content'
+  description: 'Allows users to view own article content.'
+  restrict access: false
+'view any article content':
+  title: 'View any article content'
+  description: 'Allows users to view any article content.'
+  restrict access: false
+'edit any article content':
+  title: 'Edit any article content'
+  description: 'Allows users to edit any article content.'
+  restrict access: false
+'delete any article content':
+  title: 'Delete any article content'
+  description: 'Allows users to delete any article content.'
+  restrict access: false
