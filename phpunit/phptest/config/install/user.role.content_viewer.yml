@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - phptest
+id: content_viewer
+label: 'Content Viewer'
+is_admin: null
+permissions:
+  - 'view article titles'
+  - 'create article content'
+  - 'view own article content'

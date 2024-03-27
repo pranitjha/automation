@@ -1,0 +1,11 @@
+name: PHP Unit Testing
+description: 'PHP Unit Testing'
+type: module
+core_version_requirement: '^9.1 || ^10'
+dependencies:
+  - drupal:node
+  - drupal:views
+  - drupal:block
+  - drupal:rest
+  - drupal:serialization
+  - drupal:text

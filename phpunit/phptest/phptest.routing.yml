@@ -1,0 +1,14 @@
+phptest.settings:
+  path: '/test-settings'
+  defaults:
+    _form: '\Drupal\phptest\Form\PhpTestSettingsForm'
+    _title: 'Test Configuration'
+  requirements:
+    _access: 'TRUE'
+phptest.form:
+  path: '/dynamic-selects-form'
+  defaults:
+    _title: 'Dynamic Selects Form'
+    _form: '\Drupal\phptest\Form\DynamicSelectsForm'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,7 @@
+phptest.settings:
+  type: config_object
+  label: 'Phptest settings'
+  mapping:
+    dummy_text:
+      type: text
+      label: 'Dummy text for phpunit testing'

@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - phptest
+    - serialization
+    - user
+id: article_title_resource
+plugin_id: article_title_resource
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - cookie

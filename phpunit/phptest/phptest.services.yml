@@ -1,0 +1,5 @@
+services:
+  phptest.route_subscriber:
+    class: Drupal\phptest\EventSubscriber\PhpTestRouteSubscriber
+    tags:
+      - { name: event_subscriber }
