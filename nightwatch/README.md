@@ -38,7 +38,7 @@ Even the test cases can be categorised into different tags, and a particular tag
 --tag tagName
 ```
 
-##Step 3: Adding Nightwatch JS in pipeline
+## Step 3: Adding Nightwatch JS in pipeline
 
 If you want to run the Nightwatch JS related tests in the code studio pipeline,
 Add the below code in you .gitlab-ci.yml file.
