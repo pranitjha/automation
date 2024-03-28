@@ -20,7 +20,7 @@ To run these test cases, you need to follow:
 
     - You can run all test cases. Example: `vendor/bin/phpunit -c docroot/core docroot/modules/custom/phptest/tests`
     - You can run a single test case by specifying the exact file path. Example: `vendor/bin/phpunit -c docroot/core docroot/modules/custom/phptest/tests/src/Functional/AccessDeniedTest.php`
-  
+
 ## Adding PHPUnit in pipeline
 If you want to run the PHPUnit related tests in the code studio pipeline, Add the below code in you .gitlab-ci.yml file.
 
@@ -47,3 +47,32 @@ If you want to run the PHPUnit related tests in the code studio pipeline, Add th
     # Here you run your PHPUnit tests or any other command required
     - ./vendor/bin/phpunit -c /builds/pranit.jha/Pranit-Jha-Employee-Free/phpunit.xml ./path/of/the/tests
 ```
+
+## Notes
+You can group and run a select few PHPUnit tests together by using the @group annotation like so:
+```
+  /**
+  * @group foo
+  */
+  public function testMethod()
+  {
+      // ...
+  }
+```
+
+Once you have tagged all the tests you wish to group, you can use the following command to only run the tests within that group:
+`phpunit --group foo`
+
+You can also specify multiple @group annotations for any single method, for example, like so:
+```
+  /**
+  * @group foo
+  * @group bar
+  */
+  public function testMethod()
+  {
+      // ...
+  }
+```
+
+You can also specify the @group annotation to the class itself. In that case, all test methods of that test class would be considered a part of that group
