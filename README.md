@@ -9,11 +9,15 @@ PHPUnit details include:
 - Execution of PHPUnit tests.
 - Integration with pipeline.
 
+[PHPUnit Readme file](https://github.com/pranitjha/automation/blob/main/phpunit/README.md)
+
 ## NightwatchJS
 NightwatchJS information is similar, covering:
 - Setup guidelines.
 - Example test cases.
 - Execution of NightwatchJS tests.
 - Integration with pipeline.
+
+[NightwatchJS Readme file](https://github.com/pranitjha/automation/blob/main/nightwatch/README.md)
 
 This repository encompasses PHPUnit and NightwatchJS integration details, along with generic tests. It not only explains how to add and run tests in a local environment but also provides guidance on integrating them into your CI setup. Acquia CodeStudio (GitLab) has been utilized for the Pipeline setup.
