@@ -21,6 +21,7 @@ Press y when you see the prompt to install create-nightwatch.
 This installs Nightwatch, asks your preferences and sets up the nightwatch.conf.js file based on your preferences.
 For more details check this: https://nightwatchjs.org/guide/quickstarts/create-and-run-a-nightwatch-test.html
 ```
+Once Nightwatch is installed the the tests in this repo under nightwatch/tests can be copied inside the Nightwatch directory, and post that you should be able to use these existing tests.
 
 ## Step 2: Executing Nightwatch Test cases
 
