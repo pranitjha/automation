@@ -166,3 +166,9 @@ NOTE:
 2. In nightwatch.conf.js file, add global.js location in variable globals_path.
 3. If you are creating custom commands, in your Nightwatch configuration file (nightwatch.conf.js), ensure the custom_commands_path attribute is set to point to the directory where you will be storing your custom command files.
 4. In case your test case fails, please make sure that the selectors are added correctly in the test case as per your project.
+
+### Resources
+- [NightwatchJS](https://www.npmjs.com/package/nightwatch)
+- [Install NightwatchJS](https://nightwatchjs.org/guide/quickstarts/create-and-run-a-nightwatch-test.html)
+- [Execute Drupal core tests](https://git.drupalcode.org/project/drupal/-/blob/10.1.x/core/tests/README.md)
+- [Nightwatch in Drupal Core](https://www.lullabot.com/articles/nightwatch-in-drupal-core)
